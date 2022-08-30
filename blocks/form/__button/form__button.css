@@ -1,5 +1,5 @@
 .form__button {
-font-family: 'Inter';
+font-family: 'Inter', 'Arial', sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 18px;
@@ -14,6 +14,7 @@ padding: 0;
 margin: 50px 36px 34px 36px;
 }
 .form__button:hover {
+    cursor: pointer;
     opacity: .8;
 }
 @media screen and (max-width: 767px) {
