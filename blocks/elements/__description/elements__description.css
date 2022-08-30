@@ -1,0 +1,7 @@
+.elements__description {
+    background-color: white;
+    max-width: 282px;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    justify-content: space-between;
+}
