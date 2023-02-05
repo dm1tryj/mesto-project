@@ -29,52 +29,52 @@
       </section>
       <section class="elements">
       </section>
-      <template id="elements__template">
-        <article class="elements__item">
-          <img class="elements__image"
-            src="https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg" alt="Архыз">
-          <button class="elements__delete" type="button"></button>
-          <div class="elements__description">
-            <h2 class="elements__title">Архыз</h2>
-            <button class="elements__like" type="button"></button>
-          </div>
-        </article>
-      </template>
-
-      <div class="popup popup_profile">
-        <div class="popup__container">
-          <form class="form" name="form__profile">
-            <h2 class="form__title">Редактировать профиль</h2>
-            <input class="form__input" type="text" name="name" placeholder="Имя" value="Жак-Ив Кусто" required>
-            <input class="form__input" type="text" name="job" placeholder="Ваше занятие" value="Исследователь океана"
-              required>
-            <button class="form__button" type="submit">Сохранить</button>
-          </form>
-          <button class="popup__close-button" type="button"></button>
-        </div>
-      </div>
-
-      <div class="popup popup_elements">
-        <div class="popup__container">
-          <form class="form" name="form__element">
-            <h2 class="form__title">Новое место</h2>
-            <input class="form__input" type="text" name="name" placeholder="Название" required>
-            <input class="form__input" type="text" name="link" placeholder="Ссылка на картинку" required>
-            <button class="form__button" type="submit">Создать</button>
-          </form>
-          <button class="popup__close-button" type="button"></button>
-        </div>
-      </div>
-
-      <div class="popup popup_element">
-        <div class="popup__container">
-          <img class="popup__image" src="https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg"
-            alt="Архыз">
-          <h2 class="popup__title">Архыз</h2>
-          <button class="popup__close-button" type="button"></button>
-        </div>
-      </div>
     </main>
+    <template id="elements__template">
+      <article class="elements__item">
+        <img class="elements__image"
+          src="https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg" alt="Архыз">
+        <button class="elements__delete" type="button"></button>
+        <div class="elements__description">
+          <h2 class="elements__title">Архыз</h2>
+          <button class="elements__like" type="button"></button>
+        </div>
+      </article>
+    </template>
+
+    <div class="popup popup_profile">
+      <div class="popup__container">
+        <form class="form" name="form__profile">
+          <h2 class="form__title">Редактировать профиль</h2>
+          <input class="form__input" type="text" name="name" placeholder="Имя" value="Жак-Ив Кусто" required>
+          <input class="form__input" type="text" name="job" placeholder="Ваше занятие" value="Исследователь океана"
+            required>
+          <button class="form__button" type="submit">Сохранить</button>
+        </form>
+        <button class="popup__close-button" type="button"></button>
+      </div>
+    </div>
+
+    <div class="popup popup_elements">
+      <div class="popup__container">
+        <form class="form" name="form__element">
+          <h2 class="form__title">Новое место</h2>
+          <input class="form__input" type="text" name="name" placeholder="Название" required>
+          <input class="form__input" type="text" name="link" placeholder="Ссылка на картинку" required>
+          <button class="form__button" type="submit">Создать</button>
+        </form>
+        <button class="popup__close-button" type="button"></button>
+      </div>
+    </div>
+
+    <div class="popup popup_element">
+      <div class="popup__container">
+        <img class="popup__image" src="https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg"
+          alt="Архыз">
+        <h2 class="popup__title">Архыз</h2>
+        <button class="popup__close-button" type="button"></button>
+      </div>
+    </div>
 
     <footer class="footer">
       <p class="footer__author">© 2022 Mesto Russia</p>

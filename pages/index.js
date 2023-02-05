@@ -33,6 +33,9 @@ const likeButton = document.querySelector(".elements__like");
 const popupProfile = document.querySelector(".popup_profile");
 const popupElements = document.querySelector(".popup_elements");
 const popupElement = document.querySelector(".popup_element");
+const popupImage = popupElement.querySelector(".popup__image")
+const popupTitle = popupElement.querySelector(".popup__title")
+
 const profileEditButton = document.querySelector(".profile__edit-button");
 const profileAddButton = document.querySelector(".profile__add-button");
 const profilePopupCloseButton = popupProfile.querySelector(
@@ -92,7 +95,6 @@ function submitFormProfile(evt) {
   profileSubtitle.textContent = jobInput.value;
   closePopup(popupProfile);
 }
-buttonSubmitProfile.addEventListener("click", () => saveProfile(formProfile));
 
 //Создание карточки
 function createCard(name, link) {
@@ -130,20 +132,18 @@ function createCard(name, link) {
 
 //Просмотр картинки
 function openImagePopup(link, name) {
+  popupImage.src = link;
+  popupTitle.textContent = name;
+  popupImage.setAttribute("alt", name);
   openPopup(popupElement);
-  popupElement.querySelector(".popup__image").src = link;
-  popupElement.querySelector(".popup__title").textContent = name;
-  popupElement.querySelector(".popup__image").setAttribute("alt", name);
 }
 
 //Исходные карточки
 function createInitialCards(cards) {
-  document.querySelector(".elements").innerHTML = "";
+  cardSection.innerHTML = "";
 
   for (let i = 0; i < cards.length; i++) {
-    document
-      .querySelector(".elements")
-      .append(createCard(cards[i].name, cards[i].link));
+    cardSection.append(createCard(cards[i].name, cards[i].link));
   }
 }
 createInitialCards(initialCards);
@@ -155,9 +155,9 @@ formElements.addEventListener("submit", submitNewElement);
 function submitNewElement(evt) {
   evt.preventDefault();
   renderCard(createCard(placeInput.value, linkInput.value));
+  closePopup(popupElements);
   placeInput.value = "";
   linkInput.value = "";
-  closePopup(popupElements);
 }
 function renderCard(card) {
   cardSection.prepend(card);
