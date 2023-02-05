@@ -24,15 +24,18 @@
 @import '../blocks/elements/__items/elements__items.css';
 @import '../blocks/elements/__description/elements__description.css';
 @import '../blocks/elements/__image/elements__image.css';
-
+@import '../blocks/elements/__like_active/elements__like_active.css';
+@import '../blocks/elements/__delete/elements__delete.css';
 
 @import '../blocks/footer/footer.css';
 @import '../blocks/footer/__author/footer__author.css';
 
 @import '../blocks/popup/popup.css';
 @import '../blocks/popup/_opened/popup_opened.css';
-@import '../blocks/popup/__button/popup__button.css';
+@import '../blocks/popup/__close-button/popup__close-button.css';
 @import '../blocks/popup/__container/popup__container.css';
+@import '../blocks/popup/__image/popup__image.css';
+@import '../blocks/popup/__title/popup__title.css';
 @import '../blocks/form/form.css';
 @import '../blocks/form/__button/form__button.css';
 @import '../blocks/form/__input/form__input.css';

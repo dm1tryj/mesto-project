@@ -1,9 +1,21 @@
 .elements {
-    display: flex;
-    padding-top: 48px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 282px);
+    grid-template-rows: auto;
+    gap: 20px 17px;
+    max-width: 880px;
+    padding: 0;
+    margin-top: 47.25px;
+}
+@media screen and (max-width: 1023px) {
+    .elements {
+      max-width: 590px;
+    }
 }
 @media screen and (max-width: 767px) {
-    .elements  {
-        padding-top: 36px; 
+    .elements {
+        max-width: 282px;
+        margin-top: 36px; 
     }
 }

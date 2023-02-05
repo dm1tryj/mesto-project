@@ -1,9 +1,6 @@
 .form {
     width: 430px;
-    flex-direction: column;
     background-color: white;
-    justify-content: center;
-    align-items: center;
     border-radius: 10px;
 }
 @media screen and (max-width: 767px) {
